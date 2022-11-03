@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculaotr</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,29 +20,29 @@
             <h5>refer to 수코딩</h5>
         </div>
         <form name="forms">
-            <input type="text" name="output" readonly>
-            <input type="button" class="clear" value="C" onclick="document.forms.output.value=''">
-            <input type="button" class="operator" value="/" onclick="document.forms.output.value+='/'">
-            <input type="button" value="1" onclick="document.forms.output.value+='1'">
-            <input type="button" value="2" onclick="document.forms.output.value+='2'">
-            <input type="button" value="3" onclick="document.forms.output.value+='1'">
-            <input type="button" class="operator" value="*" onclick="document.forms.output.value+='*'">
-            <input type="button" value="4" onclick="document.forms.output.value+='4'">
-            <input type="button" value="5" onclick="document.forms.output.value+='5'">
-            <input type="button" value="6" onclick="document.forms.output.value+='6'">
-            <input type="button" class="operator" value="+" onclick="document.forms.output.value+='+'">
-            <input type="button" value="7" onclick="document.forms.output.value+='7'">
-            <input type="button" value="8" onclick="document.forms.output.value+='8'">
-            <input type="button" value="9" onclick="document.forms.output.value+='9'">
-            <input type="button" class="operator" value="-" onclick="document.forms.output.value+='-'">
-            <input type="button" class="dot" value="." onclick="document.forms.output.value+='.'">
-            <input type="button" value="0" onclick="document.forms.output.value+='0'">
-            <input type="button" class="operator result" value="="
-                onclick="document.forms.output.value=eval(document.forms.output.value)">
+            <div>
+                <input type="text" name="output" id="output" readonly>
+                <input type="button" class="clear" value="C">
+                <input type="button" class="operator" value="/">
+                <input type="button" class="number" value="1">
+                <input type="button" class="number" value="3">
+                <input type="button" class="number" value="2">
+                <input type="button" class="operator" value="*">
+                <input type="button" class="number" value="4">
+                <input type="button" class="number" value="5">
+                <input type="button" class="number" value="6">
+                <input type="button" class="operator" value="+">
+                <input type="button" class="number" value="7">
+                <input type="button" class="number" value="8">
+                <input type="button" class="number" value="9">
+                <input type="button" class="operator" value="-">
+                <input type="button" class="dot" value=".">
+                <input type="button" class="number" value="0">
+                <input type="button" class="operator result" value="=">
+            </div>
         </form>
     </div>
-
-
+    <script src="app.js"></script>
 </body>
 
 </html>
